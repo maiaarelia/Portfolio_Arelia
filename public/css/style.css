@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+
+/* CSS for Register */
+
+.card-header{
+    background-color: #190482;
+    color: aliceblue;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
+.col-md-7 .col-form-label .text-start{
+    display: flex;
+    align-items: center;
+}
+
+.isi_peringatan{
+    font-size: 11px;
+}
+
+
+/* dashboard top area */
+nav.navbar.bootsnav {
+    background-color: transparent;
+    border-bottom: transparent;
+}
+
+.wrap-sticky nav.navbar.bootsnav.sticked {
+    background-color: #000;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);}
+
+.navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus{
+    display: inline-block;
+    color: black;
+    font-size: 24px;
+    letter-spacing: 3px;
+    font-family: 'Rufina', serif;
+    font-weight: 700;
+    padding: 45px 0px;
+    text-transform:uppercase;
+}
+
+
+
+.navbar-header a.navbar-brand span{
+    display: inline-block;
+    color:#4e4ffa;
+    text-transform:capitalize;}
+
+.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:hover,.wrap-sticky nav.navbar.bootsnav.sticked .navbar-header a.navbar-brand:focus {
+    padding:30px 
+    0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
