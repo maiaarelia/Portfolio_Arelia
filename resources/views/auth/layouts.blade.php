@@ -7,13 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css\style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
-    <title>Document</title>
+    <title>Portofolio</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-            <a href="{{URL('/')}}" class="navbar-brand">Custom Login Register</a>
+            <a href="{{URL('/')}}" class="navbar-brand">Welcome</a>
             <button class="navbar-toggler" type="button" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
              aria-expanded="false" aria-label="Togle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -49,6 +50,8 @@
     <div class="container">
         @yield('content')
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js\script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
