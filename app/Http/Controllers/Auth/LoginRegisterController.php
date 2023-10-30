@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
+use App\Jobs\SendMailJob;
 
 use function Laravel\Prompts\password;
 
@@ -42,9 +43,20 @@ class LoginRegisterController extends Controller
             'password' => Hash::make($request->password)
         ]);
 
+
+        $data_send = [
+            'name' =>$request->name,
+            'email'=>$request->email,
+            'subject' =>"Registrasi Sukses untuk melihat Website Portofolio Arelia :)",
+            'body'=>"Selamat Berjelajah !"
+        ];
+
         $credentials = $request->only('email', 'password');
         Auth::attempt($credentials);
         $request->session()->regenerate();
+
+
+        dispatch(new SendMailJob($data_send));
         return redirect()->route('dashboard')
         ->withSuccess('You have successfully registered and logged in');
     }
@@ -90,8 +102,5 @@ class LoginRegisterController extends Controller
         return redirect()->route('login')
         ->withSuccess('You have logged out successfully');;
     }
-
-
-
 
 }

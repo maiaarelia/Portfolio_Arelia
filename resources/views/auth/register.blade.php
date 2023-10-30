@@ -68,7 +68,7 @@
                     <div class="mb-3 row justify-content-center">
                         <div class="col-md-7 col-form-label text-start">
                             <div class="col">
-                            <p class="isi_peringatan mt-2" style="text-align: center;">Sudah Memiliki Akses untuk Melihat Website Portofolio? <span style="color: blue;"><a href="#login">Log In</a></span></p> 
+                            <p class="isi_peringatan mt-2" style="text-align: center;">Sudah Memiliki Akses untuk Melihat Website Portofolio? <span style="color: blue;"><a href="auth.login">Log In</a></span></p> 
                             </div>
                         </div>
                     </div>
