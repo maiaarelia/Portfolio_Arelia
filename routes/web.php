@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SendEmailController;
+use App\Http\Controllers\GalleryController;
 
 
 /*
@@ -19,6 +20,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/user', function () {
+    return view('users');
+});
+
 
 use App\Http\Controllers\Auth\LoginRegisterController;
 Route::controller(LoginRegisterController::class)->group(function() {
@@ -29,6 +34,8 @@ Route::controller(LoginRegisterController::class)->group(function() {
  Route::get('/dashboard', 'dashboard')->name('dashboard');
  Route::post('/logout', 'logout')->name('logout');
 });
+
+Route::resource('gallery', GalleryController::class);
 
 
 
