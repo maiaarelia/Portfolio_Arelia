@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SendEmailController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\Auth\LoginRegisterController;
 
 
 /*
@@ -25,7 +26,7 @@ Route::get('/user', function () {
 });
 
 
-use App\Http\Controllers\Auth\LoginRegisterController;
+
 Route::controller(LoginRegisterController::class)->group(function() {
  Route::get('/register', 'register')->name('register');
  Route::post('/store', 'store')->name('store');

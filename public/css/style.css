@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Poppins';
@@ -7,7 +7,7 @@
 
 /* CSS for Register */
 
-.card-header{
+.card-header {
     background-color: #190482;
     color: aliceblue;
     text-align: center;
@@ -16,12 +16,12 @@
 }
 
 
-.col-md-7 .col-form-label .text-start{
+.col-md-7 .col-form-label .text-start {
     display: flex;
     align-items: center;
 }
 
-.isi_peringatan{
+.isi_peringatan {
     font-size: 11px;
 }
 
@@ -29,13 +29,13 @@
 /* CSS for Home */
 
 
-body{
+body {
     background: #1F242D;
     color: aliceblue;
 }
 
 
-.header{
+.header {
     position: fixed;
     top: 50px;
     left: 0;
@@ -48,7 +48,7 @@ body{
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 25px;
     color: aliceblue;
     font-weight: bolder;
@@ -58,7 +58,7 @@ body{
     animation: slideRight 1s ease forwards;
 }
 
-.navigasi  a{
+.navigasi a {
     font-size: 18px;
     color: azure;
     text-decoration: none;
@@ -71,17 +71,18 @@ body{
 }
 
 
-.navigasi  a:hover, .navigasi  a.active{
+.navigasi a:hover,
+.navigasi a.active {
     color: aqua;
 }
 
-.home-content h3:nth-of-type(2){
+.home-content h3:nth-of-type(2) {
     margin-bottom: 30px;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
 }
 
-.home-content p{
+.home-content p {
     font-size: 16px;
     text-align: justify;
     opacity: 0;
@@ -89,7 +90,7 @@ body{
     animation-delay: calc(.2s * var(--i));
 }
 
-.home{
+.home {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -99,11 +100,11 @@ body{
     padding: 70px 5% 0;
 }
 
-.home-content{
+.home-content {
     max-width: 600px;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 32px;
     font-weight: 700;
     margin-top: 10px;
@@ -112,11 +113,11 @@ body{
     animation-delay: .7s;
 }
 
-.home-content span{
+.home-content span {
     color: aqua;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 56px;
     font-weight: 700;
     margin: -3px 0;
@@ -124,15 +125,15 @@ body{
     animation-delay: calc(.2s * var(--i));
 }
 
-.home-img img{
+.home-img img {
     max-width: 450px;
-    margin-right: -2 ;
+    margin-right: -2;
     opacity: 0;
     animation: zoomIn.5s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
 }
 
-.social-media a{
+.social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -151,13 +152,13 @@ body{
     animation-delay: calc(.2s * var(--i));
 }
 
-.social-media a:hover{
+.social-media a:hover {
     background: aqua;
     color: #1F242D;
     box-shadow: 0 0 20px aqua;
 }
 
-.cv{
+.cv {
     display: inline-block;
     padding: 12px 28px;
     background: aqua;
@@ -173,13 +174,19 @@ body{
 }
 
 
+/* Gallery */
+
+
+
+
 /* KEYFRAMES ANIMATION */
 
-@keyframes slideRight{
+@keyframes slideRight {
     0% {
         transform: translateX(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
@@ -187,33 +194,36 @@ body{
 }
 
 
-@keyframes slideLeft{
+@keyframes slideLeft {
     0% {
         transform: translateX(100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
 
-@keyframes zoomIn{
+@keyframes zoomIn {
     0% {
         transform: tscale(0px);
         opacity: 0;
     }
+
     100% {
         transform: scale(1px);
         opacity: 1;
     }
 }
 
-@keyframes slideLeft{
+@keyframes slideLeft {
     0% {
         transform: translateX(100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
@@ -222,22 +232,24 @@ body{
 
 
 
-@keyframes slideTop{
+@keyframes slideTop {
     0% {
         transform: translateY(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
 
-@keyframes slideBottom{
+@keyframes slideBottom {
     0% {
         transform: translateY(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
@@ -245,13 +257,15 @@ body{
 }
 
 
-@keyframes floatImage{
+@keyframes floatImage {
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-24px);
     }
+
     100% {
         transform: translateY(0px);
     }
@@ -316,13 +330,3 @@ body{
         margin-top: 20px;
     }
 }
-
-
-
-
-
-
-
-
-
-
