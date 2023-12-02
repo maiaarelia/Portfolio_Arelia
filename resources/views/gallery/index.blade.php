@@ -2,7 +2,7 @@
 @section('content')
 
 <div class="row justify-content-center mt-5">
-    <div class="col-md-8">
+    <div class="col-md-12">
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <h4 class="mb-0">Gallery Photo</h4>
@@ -12,13 +12,18 @@
                 <div class="row">
                     @if (count($galleries) > 0)
                     @foreach ($galleries as $gallery)
-                    <div class="col-sm-2" style="display: flex; flex-direction: column;">
+                    <div class="col-sm-3 mt-3" style="display: flex; flex-direction: column;">
                         <div style="position: relative;">
                             <a class="example-image-link" href="{{ asset('storage/posts_image/' . $gallery->picture) }}"
                                 data-lightbox="roadtrip" data-title="{{ $gallery->description }}">
                                 <img class="example-image img-fluid mb-2"
                                     src="{{ asset('storage/posts_image/' . $gallery->picture) }}" alt="image-1" />
                             </a>
+                            <div
+                                style="padding: 10px; background-color: #f8f9fa; border-radius: 5px; margin-top: 10px;">
+                                <h5>{{ $gallery->title }}</h5>
+                                <p>{{ $gallery->description }}</p>
+                            </div>
                         </div>
 
                         <div style="display: flex; justify-content: space-between;">

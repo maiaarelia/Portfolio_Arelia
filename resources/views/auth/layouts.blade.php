@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css\style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="{{ asset('lightbox2-dev/dist/css/lightbox.min.css')}}">
-
+    <script src="https://kit.fontawesome.com/172c27f2eb.js" crossorigin="anonymous"></script>
     <title>Portofolio</title>
 </head>
 

@@ -51,11 +51,12 @@ class LoginRegisterController extends Controller
             $path = $request->file('photo')->storeAs('photos', $filenameSimpan);
         }
 
+
         User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'photo' => $path
+            'photo' => $filenameSimpan
         ]);
 
 
